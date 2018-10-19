@@ -1,0 +1,87 @@
+.redRainBut {
+  //width: 350px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  //z-index: 2;
+}
+
+.piXiBg {
+  width: 1080px;
+  height: 1920px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(57, 63, 74, .9);
+  z-index: 10;
+
+  .startContent {
+    width: 780px;
+    height: 577px;
+    //position: absolute;
+    //top: 626px;
+    //left: 50%;
+    //margin-left: -390px;
+    margin-top: 100px;
+  }
+  .time {
+    width: 400px;
+    text-align: center;
+    //position: absolute;
+    //top: 200px;
+    //left: 50%;
+    //margin-left: -200px;
+    z-index: 1;
+    font-size: 50px;
+    color: #92f4fc;
+    div {
+      align-items: center;
+    }
+  }
+  .play {
+    left: 50%;
+    margin-left: -200px;
+    position: absolute;
+    top: 200px
+  }
+  .Prize {
+    width: 786px;
+    height: 1098px;
+    //position: absolute;
+    //top: 422px;
+    //left: 50%;
+    //margin-left: -393px;
+    animation: enlargePrize 1s;
+    z-index: 1;
+  }
+  .close {
+    margin-top: 36px;
+    z-index: 1;
+    //position: absolute;
+    //left: 50%;
+    //margin-left: -42px;
+    //bottom: 60px;
+  }
+  canvas {
+    position: absolute;
+    z-index: 16;
+  }
+}
+
+.piXiBgIsLevel {
+  width: 1920px;
+  height: 1080px;
+}
+
+@keyframes enlargePrize{
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}

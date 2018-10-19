@@ -1,0 +1,77 @@
+.box {
+  border-radius: 20px;
+  box-shadow: 0 8px 10px 0 rgba(239, 233, 249, 0.5);
+  background-color: white;
+  width: 1039px;
+  height: 1393px;
+  margin: 44px auto 63px auto;
+  animation: boxUpward .5s;
+  overflow: scroll;
+}
+
+.bill {
+  position: absolute;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 1080px;
+  height: 197px;
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+  font-size: 30px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  //justify-items: center;
+  font-family: "PingFangSC";
+
+  .left {
+    display: flex;
+    .text1 {
+      color: rgb(0, 0, 0);
+      margin-left: 16px;
+    }
+  }
+  .right {
+    display: flex;
+    height: 78px;
+    line-height: 78px;
+
+    .text2 {
+      color: rgb(0, 0, 0);
+    }
+    .mark {
+      font-size: 20px;
+      line-height: 86px;
+      color: red;
+    }
+    .prize {
+      color: red;
+      margin-right: 20px;
+    }
+    .buy {
+      background-image: -moz-linear-gradient( 126deg, rgb(255,81,47) 0%, rgb(252,167,4) 100%);
+      background-image: -webkit-linear-gradient( 126deg, rgb(255,81,47) 0%, rgb(252,167,4) 100%);
+      background-image: -ms-linear-gradient( 126deg, rgb(255,81,47) 0%, rgb(252,167,4) 100%);
+      width: 179px;
+      height: 78px;
+      //margin-left: 36px;
+      border-radius: 39px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  }
+
+
+}
+
+
+@keyframes boxUpward {
+  from {
+    transform: translateY(1920px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

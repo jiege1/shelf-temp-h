@@ -1,0 +1,68 @@
+.box {
+  position: fixed;
+  width: 1080px;
+  height: 1920px;
+  background-color: #ebebeb;
+  font-family: "PingFangSC";
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  .close2 {
+    position: absolute;
+    top: 68px;
+    left: 50px;
+  }
+  .close1 {
+    position: absolute;
+    left: 944px;
+    top: 1343px;
+    z-index: 1;
+  }
+
+  .menusBox {
+    width: 100%;
+    display: flex;
+    font-size: 36px;
+    color: rgb(87, 87, 87);
+    background-color: #ffffff;
+    .menu {
+      width: 100%;
+      height: 224px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: inset 0 10px 98px 0 rgba(118, 49, 232, 0.66);
+      img {
+        margin-right: 5px;
+      }
+    }
+    //.selected {
+    //  //background-color: rgb(57, 56, 60);
+    //  box-shadow: inset 0 10px 98px 0 rgba(118, 49, 232, 0.66);
+    //
+    //}
+  }
+
+
+}
+
+
+.shopCart {
+  position: absolute;
+  z-index: 2;
+
+  .count {
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: -21px;
+    right: -21px;
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 42px;
+    color: white;
+  }
+}
